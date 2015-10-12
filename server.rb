@@ -1,6 +1,6 @@
 require 'sinatra'
 
 get '/' do
-	"Hello World"
+	File.open("./public/hello.txt").read
 end
 
